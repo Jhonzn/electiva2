@@ -9,8 +9,8 @@ from sklearn.metrics import accuracy_score
 data = pd.read_excel("dataset_clientes_churn.xlsx")
 
 # Separar variables
-X = data.drop("cancelara", axis=1)
-y = data["cancelara"]
+X = data.drop("cancelo", axis=1)
+y = data["cancelo"]
 
 # Dividir datos
 X_train, X_test, y_train, y_test = train_test_split(
